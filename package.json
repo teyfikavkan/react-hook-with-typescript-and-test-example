@@ -16,7 +16,9 @@
     "build-dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build-prod": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress --colors --bail",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,8 +41,16 @@
     "@types/react-dom": "^16.9.8",
     "cross-env": "^7.0.2",
     "css-loader": "^4.2.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.10.0",
+    "prettier": "^2.0.5",
     "source-map-loader": "^1.0.2",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",

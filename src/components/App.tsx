@@ -6,6 +6,6 @@ export interface AppInterface {
 }
 export const App = (props: AppInterface) => (
   <h1>
-    Hi {props.userName} from React! Welcome to {props.lang}!
+     Hi {props.userName} from React! Welcome to {props.lang}!
   </h1>
 );
